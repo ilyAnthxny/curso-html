@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ul-unordened list: Cuando el orden de los elementos de la lista no influyen
+        ol-ordened list:Cuando los elementos de la lista si importa el orden
+        dl-definition list:Lista de definiciones usa <dl />:Definicion list y <dd />:definicion del termino
+        li: Elementos de la lista en UL y OL
+    -->  
+    <h1>Barra de navegacion correcta</h1>
+    <!--Semantica correcta de un menu de navegacion-->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Buscar</a></li>
+        </ul>
+    </nav>
+    <h2>Listas desordenadas</h2>
+    <ul>
+        <li>Pan</li>
+        <li>Leche</li>
+        <li>Huevo</li>
+    </ul>
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li>Top 3</li>
+        <li>Top 2</li>
+        <li>Top 1</li>
+    </ol>
+    <h2>Listas de definicion</h2>
+    <dl>
+        <dt>Definicion de #</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, enim reiciendis in sapiente nisi saepe consequuntur optio esse beatae totam?</dd>
+        <dt>Definicion de #</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quas quod perferendis ea obcaecati consequatur? Omnis quis earum dignissimos sit?</dd>
+    </dl>
+
+    <!--Tablas
+    table -- Etiqueta que encierra a una tabla
+    tr -- Fila de una tabla
+    td -- construye una celda
+    Nota: El numero de celdas dentro de un tr establecera el numero de columnas de la tabla
+    caption -- Titulo de la tabla
+    thead-- Columnas de la tabla 
+    th-- head de las columnas de una tabla 
+    tbody -- La tabla debe ir dentro de un tbody
+    tfoot -- pie de pagina para las tablas
+    -->
+    <!--Atributos de una tabla
+    colspan- para que una celda ocupe mas columnas depediendo del numero que escribamos
+     
+    -->
+    
+    <h1>Tablas</h1>
+    <table>
+        <caption>Horario de Clases</caption>
+        <thead>
+            <th></th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+        </thead>
+     <tbody>
+        <tr>
+            <td>8:30 - 9:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+        </tr>
+        <tr>
+            <td>9 - 10:20</td>
+            <td>Español</td>
+            <td>Español</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td>Biologia</td>
+            <td>Biologia</td>
+        </tr>
+     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total de asignaturas</td>
+            <td>3 </td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

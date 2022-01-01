@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- adress: Se usa para aportar informacion de contacto para el article mas cercano o para todo el body
+
+    blockquote: Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir un atributo cite para poner un enlace al documento original o funte.
+
+    pre: Representa codigo en el documento exactamente igual que como aparece en el codigo
+
+    div: Se usa para hacer divisiones en el documento
+    hr: se utiliza para decirle al navegador que cambiaremos de tema
+--> 
+    <address>
+        Direccion de <br>
+        Lorem.
+    </address>
+    <blockquote cite="#">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates labore, eum et distinctio vel ipsum libero praesentium. Sunt excepturi, id quidem pariatur nisi dolorum eos qui iure, consequuntur ratione sit!</p>
+    </blockquote>
+    <div>
+
+        <h2>Nombre</h2>
+        <p>Email</p>
+        <p>Descripcion </p>
+    </div>
+
+
+    <!--Etiquetas importantes de linea
+    span -> Es un contenedor de linea (parecido a div) se suele usar para encerrar palabras pequeñas  y darles estilos atraves de css o localizarlos desde js 
+
+    q -> Sirve para poner citas en linea 
+
+    code -> Sirve para encerrar codigo que queremos representar
+    -->
+
+    <form><!--Con el atributo name permite solo escojer un elemento en el navegador-->
+        <h2>Genero</h2>
+        <label>Masculino
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+        <label>Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>Otro
+            <input type="radio" name="gender" value="otro">
+        </label>
+    </form>
+
+    <form><!--checkbox es parecido al type radio pero te permite seleccionar mas elementos-->
+        <h2>Lenguajes que conoces</h2>
+        <label>
+            HTML 
+            <input type="checkbox" name="lenguajes" value="html">
+        </label>
+        <label>
+            CSS
+            <input type="checkbox" name="lenguajes" value="css">
+        </label>
+        <label>
+            JS
+            <input type="checkbox" name="lenguajes" value="js">
+        </label>
+    </form>
+    
+    <form><!--Permite seleccionar una de las opciones
+    el optgroup sirve para dividir en grupos la lista del formulario y el label sirve para ponerle nombre a esos grupos-->
+        <h2>Seleccione una opcion</h2>
+        <select name="enp">
+            <optgroup label="cch's">
+                <option value="cchsur">cch sur</option>
+                <option value="cchazcapotzalco">cch azcapotzalco</option>
+                <option value="cchnaucalpan">cch naucalpan</option>
+            </optgroup>
+            <optgroup label="prepas">
+                <option value="prepa5">prepa 5</option>
+                <option value="prepa6">prepa 6</option>
+                <option value="prepa1">prepa 1</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <form><!--El datalist es mas comodo para el usuario, permite escribir una palabra en el form y el form lo busca en la lista-->
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+            <option value="gato"></option>
+            <option value="perro"></option>
+            <option value="hamster"></option>
+            <option value="tortuga"></option>
+            <option value="canario"></option>
+            <option value="pez"></option>
+        </datalist>
+    </form>
+
+    <form>
+        <input type="text" placeholder="nombre" required>
+        <input type="text" placeholder="apellido" required>
+        <input type="text" value="todo en minisculas" readonly>
+        <input type="submit">
+    </form>
+
+
+</body>
+</html>

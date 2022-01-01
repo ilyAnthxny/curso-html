@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+h2{
+    font: bold 20px Arial;
+}
+
+header, section, footer, aside, nav, article, hgroup, time{
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+.header{
+    text-align: left;
+    padding: 15px;
+}
+
+.header h1{
+text-align: left;
+}
+
+.agrupar{
+    width: 900px;
+    margin: 15px auto;
+    border: 1px solid black;
+}
+.menu{
+    text-align: left;
+    padding: 0 10px
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    font-family: Verdana;
+}
+
+.seccion{
+    margin: 20px;
+    width: 600px;
+    float: left;
+}
+
+time{
+    color: #999;
+    margin: 10px;
+}
+
+article{
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+article footer{
+    text-align: right;
+}
+
+.columna{
+    float: left;
+    width: 240px;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+.columna blockquote{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.columna blockquote:hover {
+    background-color: gray;
+}
+
+.pieDePagina{
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
